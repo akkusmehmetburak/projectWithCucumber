@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Testng Cucumber Suite]">
+  <test name="Run All Tests(failed)">
+    <classes>
+      <class name="com.burak.projectWithCucumber.test.CucumberRunner">
+        <methods>
+          <include name="afterScenario"/>
+          <include name="setUp"/>
+          <include name="run_cukes"/>
+          <include name="tearDownr"/>
+          <include name="takeScreenshot"/>
+          <include name="writeExtentReport"/>
+        </methods>
+      </class> <!-- com.burak.projectWithCucumber.test.CucumberRunner -->
+    </classes>
+  </test> <!-- Run All Tests(failed) -->
+</suite> <!-- Failed suite [Testng Cucumber Suite] -->

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+    <line>
+      <![CDATA[<div "featureFile">Feature File: CucumberTests.feature</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "feature">Feature: Image Galery Functionality</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "scenario">Scenario: Import One Image Successfully</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">When  Click Plus button and import the one picture (passed : 4s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Then  Check that there is one image (passed : 2s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "scenario">Scenario: Import Multiple Image Successfully</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">When  Click Plus button and import three pictures (passed : 5s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Then  Check that there are three images (passed : 2s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "scenario">Scenario: Delete one Image Successfully</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Given  Click Plus button and import three pictures (passed : 5s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">When  Click first imported image and preview it (passed : 1s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">And  Click delete button and delete image (passed : 0s)</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div "result">Then  Check that the image is deleted (failed : 2s)</div>]]>
+    </line>
+  </reporter-output>
+  <suite name="Testng Cucumber Suite" duration-ms="23554" started-at="2018-06-13T23:16:36Z" finished-at="2018-06-13T23:17:00Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.run_cukes()[pri:0, instance:com.burak.projectWithCucumber.test.CucumberRunner@1ed4004b]" name="run_cukes" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Run All Tests" duration-ms="23554" started-at="2018-06-13T23:16:36Z" finished-at="2018-06-13T23:17:00Z">
+      <class name="com.burak.projectWithCucumber.test.CucumberRunner">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.burak.projectWithCucumber.test.CucumberRunner@1ed4004b]" name="setUp" is-config="true" duration-ms="3475" started-at="2018-06-14T02:16:33Z" finished-at="2018-06-14T02:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="run_cukes()[pri:0, instance:com.burak.projectWithCucumber.test.CucumberRunner@1ed4004b]" name="run_cukes" duration-ms="22710" started-at="2018-06-14T02:16:36Z" description="Runs Cucumber Features" finished-at="2018-06-14T02:16:59Z">
+          <exception class="cucumber.runtime.CucumberException">
+            <message>
+              <![CDATA[java.lang.AssertionError: No found 5 imported images..! expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.AssertionError: No found 5 imported images..! expected [true] but found [false]
+	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:48)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.run_cukes(AbstractTestNGCucumberTests.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.MethodInvocationHelper$1.runTestMethod(MethodInvocationHelper.java:209)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.run(AbstractTestNGCucumberTests.java:19)
+	at org.testng.internal.MethodInvocationHelper.invokeHookable(MethodInvocationHelper.java:221)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:657)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.AssertionError: No found 5 imported images..! expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertTrue(Assert.java:41)
+	at com.burak.projectWithCucumber.stepdefinition.HomePage.checkTwoImageExist(HomePage.java:83)
+	at ✽.Then Check that the image is deleted(CucumberTests.feature:15)
+]]>
+            </full-stacktrace>
+          </exception> <!-- cucumber.runtime.CucumberException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<div "featureFile">Feature File: CucumberTests.feature</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "feature">Feature: Image Galery Functionality</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "scenario">Scenario: Import One Image Successfully</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">When  Click Plus button and import the one picture (passed : 4s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Then  Check that there is one image (passed : 2s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "scenario">Scenario: Import Multiple Image Successfully</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">When  Click Plus button and import three pictures (passed : 5s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Then  Check that there are three images (passed : 2s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "scenario">Scenario: Delete one Image Successfully</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Given  Click Plus button and import three pictures (passed : 5s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">When  Click first imported image and preview it (passed : 1s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">And  Click delete button and delete image (passed : 0s)</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div "result">Then  Check that the image is deleted (failed : 2s)</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- run_cukes -->
+        <test-method status="PASS" signature="afterScenario(org.testng.ITestResult)[pri:0, instance:com.burak.projectWithCucumber.test.CucumberRunner@1ed4004b]" name="afterScenario" is-config="true" duration-ms="356" started-at="2018-06-14T02:16:59Z" finished-at="2018-06-14T02:17:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=run_cukes status=FAILURE method=AbstractTestNGCucumberTests.run_cukes()[pri:0, instance:com.burak.projectWithCucumber.test.CucumberRunner@1ed4004b] output=<div "featureFile">Feature File: CucumberTests.feature</div>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterScenario -->
+        <test-method status="PASS" signature="tearDownr(org.testng.ITestResult)[pri:0, instance:com.burak.projectWithCucumber.test.CucumberRunner@1ed4004b]" name="tearDownr" is-config="true" duration-ms="1" started-at="2018-06-14T02:17:00Z" finished-at="2018-06-14T02:17:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=run_cukes status=FAILURE method=AbstractTestNGCucumberTests.run_cukes()[pri:0, instance:com.burak.projectWithCucumber.test.CucumberRunner@1ed4004b] output=<div "featureFile">Feature File: CucumberTests.feature</div>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownr -->
+        <test-method status="PASS" signature="takeScreenshot()[pri:0, instance:com.burak.projectWithCucumber.test.CucumberRunner@1ed4004b]" name="takeScreenshot" is-config="true" duration-ms="334" started-at="2018-06-14T02:17:00Z" finished-at="2018-06-14T02:17:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshot -->
+        <test-method status="PASS" signature="writeExtentReport()[pri:0, instance:com.burak.projectWithCucumber.test.CucumberRunner@1ed4004b]" name="writeExtentReport" is-config="true" duration-ms="135" started-at="2018-06-14T02:17:00Z" finished-at="2018-06-14T02:17:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writeExtentReport -->
+      </class> <!-- com.burak.projectWithCucumber.test.CucumberRunner -->
+    </test> <!-- Run All Tests -->
+  </suite> <!-- Testng Cucumber Suite -->
+</testng-results>
